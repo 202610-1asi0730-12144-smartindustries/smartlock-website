@@ -197,3 +197,92 @@ body, html {
     color: var(--text-white);
 }
 
+
+
+.use-cases {
+    background-color: var(--nav-gray); /* Fondo gris claro como el de funcionalidades */
+    padding: 80px 8%;
+    border-top: 4px solid var(--navy-bg);
+}
+
+
+.cases-header { text-align: left; margin-bottom: 50px; }
+.cases-label { font-size: 0.85rem; font-weight: bold; color: #444; letter-spacing: 1px; }
+.cases-header h2 { font-size: 2.2rem; margin: 10px 0; color: #000; font-weight: 700; }
+
+
+.cases-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+.case-card {
+    background-color: var(--navy-bg);
+    padding: 40px 30px;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0; /* Para animación */
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+
+.case-card.reveal { opacity: 1; transform: translateY(0); }
+
+
+.case-tag {
+    display: inline-block;
+    background-color: var(--tag-bg);
+    color: #2d4a2d;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    width: fit-content;
+    margin-bottom: 25px;
+}
+
+
+.case-quote {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+
+.case-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.author-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+
+/* Colores de Avatares */
+.av-blue { background-color: #3b5998; }
+.av-green { background-color: #76a376; }
+.av-purple { background-color: #8a76a3; }
+
+
+.author-info { display: flex; flex-direction: column; }
+.author-info strong { font-size: 1rem; }
+.author-info span { font-size: 0.8rem; opacity: 0.6; margin-top: 2px; }
+
