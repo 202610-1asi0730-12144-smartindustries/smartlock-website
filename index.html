@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartLock - Gestión de Accesos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/SmartLock-logo-transparent.png" alt="SmartLock Logo">
+            <b class="smartlock-name">SmartLock</b>
+        </div>
+        <div class="nav-links">
+            <a href="#features" data-i18n="nav-feat">Funcionalidades</a>
+            <a href="#how-it-works" data-i18n="nav-how">Cómo Funciona</a>
+            <a href="#use-cases" data-i18n="nav-cases">Casos de Uso</a>
+            <a href="#pricing" data-i18n="nav-price">Precios</a>
+            <a href="#contact" data-i18n="nav-contact">Contacto</a>
+            <button id="lang-btn">EN/ES</button>
+            <button class="btn-nav-gray" data-i18n="nav-login">Iniciar Sesion</button>
+            <button class="btn-nav-blue" data-i18n="nav-demo">Solicitar Demo</button>
+        </div>
+    </nav>
+
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 data-i18n="hero-h1">Controla quien entra tus instalaciones, en tiempo real</h1>
+            <p class="hero-sub" data-i18n="hero-p">Smartlock digitaliza tu seguridad física. <br> Gestiona puertas, usuarios y accesos desde un solo panel.</p>
+            <div class="hero-btns">
+                <button class="btn-main-white" data-i18n="hero-btn-demo">Solicitar Demo gratuita</button>
+                <button class="btn-link-white" data-i18n="hero-btn-how">Ver como funciona</button>
+            </div>
+            <div class="stats-row">
+                <div class="stat-box">
+                    <h2 class="cyan-text">+500</h2>
+                    <p data-i18n="stat-1">Edificios gestionados</p>
+                </div>
+                <div class="stat-box">
+                    <h2 class="cyan-text">99.9%</h2>
+                    <p data-i18n="stat-2">Uptime garantizado</p>
+                </div>
+                <div class="stat-box">
+                    <h2 class="cyan-text">0 seg</h2>
+                    <p data-i18n="stat-3">Latencia en alertas</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="features">
+        <div class="features-header">
+            <span class="feat-label" data-i18n="feat-label">FUNCIONALIDADES</span>
+            <h2 data-i18n="feat-title">Todo lo que necesitas para gestionar el acceso</h2>
+            <p data-i18n="feat-sub">Desde una sola cerradura hasta cientos de puntos de control.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feat-card"><h3 data-i18n="card1-t">Control en tiempo real</h3><p data-i18n="card1-p">Monitorea cada ingreso al instante.</p></div>
+            <div class="feat-card"><h3 data-i18n="card2-t">Credenciales digitales</h3><p data-i18n="card2-p">Asigna y revoca permisos por usuario.</p></div>
+            <div class="feat-card"><h3 data-i18n="card3-t">Bitácora de accesos</h3><p data-i18n="card3-p">Registro completo con trazabilidad.</p></div>
+            <div class="feat-card"><h3 data-i18n="card4-t">Multi-sede</h3><p data-i18n="card4-p">Gestiona accesos por zonas y sedes.</p></div>
+        </div>
+    </section>
+
+
+    <section id="how-it-works" class="how-works">
+        <div class="how-header">
+            <span class="how-label" data-i18n="how-label">CÓMO FUNCIONA</span>
+            <h2 data-i18n="how-title">Operativo en 3 pasos</h2>
+            <p data-i18n="how-sub">Sin instalaciones complicadas. Sin semanas de configuración.</p>
+        </div>
+        <div class="steps-container">
+            <div class="step-item">
+                <div class="step-circle">1</div>
+                <h3 data-i18n="step1-t">Instala los puntos de control</h3>
+                <p data-i18n="step1-p">Conecta tus cerraduras inteligentes o torniquetes a la plataforma vía ID técnico.</p>
+            </div>
+            <div class="step-arrow">→</div>
+            <div class="step-item">
+                <div class="step-circle">2</div>
+                <h3 data-i18n="step2-t">Registra a tus usuarios</h3>
+                <p data-i18n="step2-p">Crea perfiles, asigna zonas y horarios de acceso a cada persona o grupo.</p>
+            </div>
+            <div class="step-arrow">→</div>
+            <div class="step-item">
+                <div class="step-circle">3</div>
+                <h3 data-i18n="step3-t">Monitorea y actúa</h3>
+                <p data-i18n="step3-p">Recibe alertas al instante y toma decisiones desde el panel sin levantarte del escritorio.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="use-cases" class="use-cases">
+        <div class="cases-header">
+            <span class="cases-label" data-i18n="cases-label">CASOS DE USO</span>
+            <h2 data-i18n="cases-title">Lo usan equipos de seguridad reales</h2>
+        </div>
+        <div class="cases-grid">
+            <div class="case-card">
+                <span class="case-tag" data-i18n="case1-tag">Edificio corporativo</span>
+                <p class="case-quote" data-i18n="case1-quote">"Antes llevábamos el registro en una planilla de Excel. Ahora tenemos trazabilidad completa y alertas automáticas cuando alguien intenta entrar fuera de horario."</p>
+                <div class="case-author">
+                    <div class="author-avatar av-blue">CR</div>
+                    <div class="author-info">
+                        <strong data-i18n="case1-name">Carlos Ríos</strong>
+                        <span data-i18n="case1-job">Jefe de Seguridad - Grupo Milenio</span>
+                    </div>
+                </div>
+            </div>
+            <div class="case-card">
+                <span class="case-tag" data-i18n="case2-tag">Universidad</span>
+                <p class="case-quote" data-i18n="case2-quote">"Gestionamos más de 40 laboratorios con diferentes niveles de acceso. SmartLock nos permite revocar credenciales al instante si un alumno ya no está matriculado."</p>
+                <div class="case-author">
+                    <div class="author-avatar av-green">MP</div>
+                    <div class="author-info">
+                        <strong data-i18n="case2-name">María Paredes</strong>
+                        <span data-i18n="case2-job">Directora TI - Universidad Norte</span>
+                    </div>
+                </div>
+            </div>
+            <div class="case-card">
+                <span class="case-tag" data-i18n="case3-tag">Almacén logístico</span>
+                <p class="case-quote" data-i18n="case3-quote">"Necesitábamos controlar quién entraba al área de despacho. La integración con nuestro sistema de RRHH fue directa y el historial de accesos es impecable."</p>
+                <div class="case-author">
+                    <div class="author-avatar av-purple">JV</div>
+                    <div class="author-info">
+                        <strong data-i18n="case3-name">Jorge Villanueva</strong>
+                        <span data-i18n="case3-job">Gerente de Operaciones - LogiPeru</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="pricing" class="pricing">
+        <div class="pricing-header">
+            <span class="pricing-label" data-i18n="price-label">PRECIOS</span>
+            <h2 data-i18n="price-title">Planes que crecen contigo</h2>
+        </div>
+       
+        <div class="pricing-grid">
+            <div class="price-card">
+                <h3 data-i18n="p1-name">Básico</h3>
+                <div class="price-amount">
+                    <span class="currency">$</span>
+                    <span class="number">49</span>
+                    <span class="period" data-i18n="price-month">/mes</span>
+                </div>
+                <ul class="price-features">
+                    <li data-i18n="p1-f1">Hasta 5 puertas</li>
+                    <li data-i18n="p1-f2">Usuarios ilimitados</li>
+                    <li data-i18n="p1-f3">Soporte por email</li>
+                </ul>
+                <button class="btn-price" data-i18n="price-btn">Empezar ahora</button>
+            </div>
+            <div class="price-card featured">
+                <div class="popular-badge" data-i18n="price-popular">RECOMENDADO</div>
+                <h3 data-i18n="p2-name">Profesional</h3>
+                <div class="price-amount">
+                    <span class="currency">$</span>
+                    <span class="number">99</span>
+                    <span class="period" data-i18n="price-month">/mes</span>
+                </div>
+                <ul class="price-features">
+                    <li data-i18n="p2-f1">Hasta 20 puertas</li>
+                    <li data-i18n="p2-f2">Multi-sede (hasta 3)</li>
+                    <li data-i18n="p2-f3">Alertas en tiempo real</li>
+                    <li data-i18n="p2-f4">Soporte 24/7</li>
+                </ul>
+                <button class="btn-price blue" data-i18n="price-btn">Empezar ahora</button>
+            </div>
+            <div class="price-card">
+                <h3 data-i18n="p3-name">Empresarial</h3>
+                <div class="price-amount">
+                    <span class="number">Custom</span>
+                </div>
+                <ul class="price-features">
+                    <li data-i18n="p3-f1">Puertas ilimitadas</li>
+                    <li data-i18n="p3-f2">Integración con API</li>
+                    <li data-i18n="p3-f3">Account Manager dedicado</li>
+                </ul>
+                <button class="btn-price" data-i18n="price-contact">Contactar ventas</button>
+            </div>
+        </div>
+    </section
+
+    
+<section id="contact" class="contact">
+    <div class="contact-container">
+        <div class="contact-info">
+            <span class="contact-label" data-i18n="contact-label">CONTACTO</span>
+            <h2 data-i18n="contact-title">¿Listo para digitalizar tu seguridad?</h2>
+            <p data-i18n="contact-sub">Nuestro equipo técnico te ayudará a encontrar la mejor solución para tus instalaciones.</p>
+            <div class="contact-details">
+                <div class="detail-item"><strong>Email:</strong> sales@smarttecnologies.com</div>
+                <div class="detail-item"><strong>Tel:</strong> +51 999 888 777</div>
+            </div>
+        </div>
+        <form class="contact-form">
+            <div class="form-grid">
+                <input type="text" data-i18n-ph="ph-name" placeholder="Nombre">
+                <input type="text" data-i18n-ph="ph-lastname" placeholder="Apellido">
+                <input type="email" data-i18n-ph="ph-email" placeholder="Correo electrónico">
+                <input type="tel" data-i18n-ph="ph-phone" placeholder="Teléfono">
+                <input type="text" data-i18n-ph="ph-company" placeholder="Empresa" class="full-width">
+                <textarea data-i18n-ph="ph-msg" placeholder="¿En qué podemos ayudarte?" class="full-width"></textarea>
+            </div>
+            <button type="submit" class="btn-nav-blue" data-i18n="form-btn">Enviar mensaje</button>
+        </form>
+    </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="img/SmartLock-logo-transparent.png" alt="SmartLock Logo">
+                <p data-i18n="footer-slogan">Seguridad inteligente para un mundo conectado.</p>
+            </div>
+            <div class="footer-links">
+                <h4 data-i18n="footer-prod">Producto</h4>
+                <a href="#features" data-i18n="nav-feat">Funcionalidades</a>
+                <a href="#pricing" data-i18n="nav-price">Precios</a>
+            </div>
+            <div class="footer-links">
+                <h4 data-i18n="footer-legal">Legal</h4>
+                <a href="#" data-i18n="footer-privacy">Privacidad</a>
+                <a href="#" data-i18n="footer-terms">Términos</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SmartTecnologies. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <button id="lang-btn-float" class="lang-float">
+        <span class="icon">🌐</span>
+        <span class="text">EN/ES</span>
+    </button>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
